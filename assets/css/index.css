@@ -257,6 +257,38 @@ html {
     }
 }
 
+@media (max-width:700px) {
+    .border-red{
+        width: 1100px;
+       margin-left: 190px;
+    }
+    .input-box {
+        width: 200px;
+        transform: translateY(-20px);
+    }
+    .search-box {
+        width: 200px;
+        border: 2.5px solid #f5f5ff;
+        height: 40px;
+    }
+    .microphone{
+      margin-left: 400px;
+      margin-top: -60px;
+    }
+    .icons {
+        width: 100px;
+        height: 50px;
+        transform: translateY(-45px);
+        color: rgb(184, 173, 173);
+        margin-right: 400px;
+    }
+    .btn-box {
+        padding: -12px;
+        width: 300px;
+    }
+}
+
+
 
 @media (max-width:500px) {
     img {
