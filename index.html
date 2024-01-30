@@ -3,83 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <!--- Custom Link ----->
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <!---- FontAwesome icons -------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
 </head>
 
 <body>
-    <!------- Header------->
-    <header class="w-full flex   justify-right ">
-        <div class="navbar w-full  ">
-            <div class="container   justify-center flex-nav">
-                <h1 class="logo flex-nav space-around">
-                    <p class="brand">About</p>
-                    <p class="brand">Stores</p>
-                </h1>
-                <!-------Navbars------>
-                <nav>
-                    <ul class="list-style-none flex">
-                        <li> <a href="#" class="text-decorate color ">Gmail</a></li>
-                        <li> <a href="#" class="text-decorate color">Images</a></li>
-                    </ul>
-                </nav>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Timi Maliki</a>
             </div>
-        </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active"> Home</a></li>
+                    <li class="nav__item"><a href="https://github.com/TimiMaliki" class="nav__link">GitHub</a></li>
+                    <li class="nav__item"><a href="https://www.linkedin.com/in/timimaliki/"
+                            class="nav__link">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
-    <!------- Header------->
+    <!------=============== NAVBAR ==================------->
+
+    <!------=============== CURRENCY API ==================------->
+
+    <section>
+        <div class="container">
 
 
-    <!------Main Content------->
-    <main class="flex justify-center w-full h-full">
-        <div class=" border-red">
-            <img src="./assets/images/google.png" alt="google">
-            <!----Search box------>
-            <div class="search-box mx-4 relative">
-                <form action="" class="flex justify-center mx-2"></form>
-                <input type="text" placeholder="" class="input-box relative">
-                <i class="fa fa-search icons mx-2  relative"></i>
-                <i class="fa fa-microphone microphone relative"></i>
+            <label for="" class="amount">Amount:</label>
+            <input type="number" class="amountInput" value="100">
+
+            <div class="dropdowns">
+                <select id="from-currency-select"></select>
+                <select id="to-currency-select"></select>
             </div>
-            </form>
-            <!----buttons------>
-            <div class="btn-box flex justify-center w-50 mx-auto space-around">
-                <button class="btn ">Google Search</button>
-                <button class="btn">I'm Feeling Lucky</button>
-            </div>
+            <button  class="convert-button button-1">Convert</button>
+            <p class="result"></p>
         </div>
-    </main>
-    <!------Main Content------->
+    
 
-    <!------- Footer ------->
-    <footer class=" w-full">
-        <div class="footer-footer">
-            <div class="united-kingdom w-full flex">
 
-            </div>
-            <hr>
-            <div class="footer-text flex justify-center mx-1">
-                <p>Carbon Neutral Since 2007</p>
-            </div>
-            <div class="grid  w-full h-vh">
-                <div class="grid-left mx-6 flex space-around text-decorate">
-                    <p><a href="#" class="text-decorate grid-p">Advertising</a></p>
-                    <p><a href="#" class="text-decorate grid-p">Business</a></p>
-                    <p><a href="#" class="text-decorate grid-p">How Search Works</a></p>
-                </div>
-                <div class="grid-right  flex space-around  mx-6 ">
-                    <p><a href="#" class="text-decorate grid-p">Privacy</a></p>
-                    <p><a href="#" class="text-decorate grid-p">Terms</a></p>
-                    <p><a href="#" class="text-decorate grid-p">Settings</a></p>
+
+
+    </section>
+
+
+
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer  bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <h2><a href="#" class="footer__logo">Timi Maliki</a></h2>
+                <span class="footer__description">
+                    <ul>
+                        <li>AgeCalculator App</li>
+                    </ul>
+                </span>
+                <div>
+                    <a href="#" class="https://github.com/TimiMaliki"><i class="bi bi-github"></i></a>
+                    <a href="#" class="https://www.linkedin.com/in/timimaliki/"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
+
+            <div class="footer__content">
+                <h2 class="footer__title">Services</h2>
+                <ul>
+                    <li><a href="#" class="footer__link">Web Development</a></li>
+                    <li><a href="#" class="footer__link">Hosting</a></li>
+                    <li><a href="#" class="footer__link">Software Engineer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h2 class="footer__title">Address</h2>
+                <ul>
+                    <li>Ebonyi State - Nigeria</li>
+                    <li>No 4 odi Nwankwo strt.</li>
+                    <li>+234 8102850113</li>
+                    <li>malikitimi@email.com</li>
+                </ul>
+            </div>
         </div>
+
+        <p class="footer__copy">&#169; 2024 Maliki. All right reserved</p>
     </footer>
-    <!------- Footer------->
+
+
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/currency-codes.js"></script>
 </body>
 
 </html>
