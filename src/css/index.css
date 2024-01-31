@@ -209,7 +209,14 @@ button{
         background-color: #f4f4f4;
         transition: .5s;
     }
-
+    .container {
+        margin-top: 3rem;
+        width: 300px;
+        height: 370px;
+    }
+    .result{
+        height: 40px;
+    }
 }
 
 .nav__item {
